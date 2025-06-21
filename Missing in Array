@@ -1,0 +1,17 @@
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+    int missingNum(const vector<int>& arr) {
+        long long n = arr.size() + 1;
+        long long totalSum = n * (n + 1) / 2;
+
+        long long actualSum = 0;
+        for (int num : arr) {
+            actualSum += num;
+        }
+
+        return (int)(totalSum - actualSum);
+    }
+};
