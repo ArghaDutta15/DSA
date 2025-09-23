@@ -1,4 +1,4 @@
 SELECT emuni.unique_id, e.name 
-FROM Employees e  
+    FROM Employees e  
 LEFT JOIN EmployeeUNI emuni  
-ON e.id = emuni.id;
+    ON e.id = emuni.id;
