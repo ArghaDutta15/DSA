@@ -5,3 +5,5 @@ and manager_id not in (
     select employee_id from employees
 )
 order by employee_id;
+
+#using subqueries
